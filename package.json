@@ -1,0 +1,23 @@
+{
+  "name": "alarm_bot",
+  "version": "1.0.0",
+  "description": "alarm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruboon-dej/alarm.git"
+  },
+  "author": "Ruboon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruboon-dej/alarm/issues"
+  },
+  "homepage": "https://github.com/ruboon-dej/alarm#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "ms": "^2.1.3"
+  }
+}
