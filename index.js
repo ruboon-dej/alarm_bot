@@ -1,9 +1,10 @@
-import 
+require('dotenv').config();
 const ms = require('ms');
 const discord = require ("discord.js");
 const { Client, MessageEmbed } = require('discord.js');
-const client = new Client();
-client.login(Token);
+const client = new discord.Client();
+client.login(process.env.TOKEN);
+// token here
 client.once('ready', () => {
     console.log(`Ready to go! \n Log in as ${client.user.tag}`);
 })
@@ -11,7 +12,9 @@ client.once('ready', () => {
 const PREFIX = "$";
 
 client.on('message', message =>{
-    let args = message.content.substring(PREFIX.length).split(" ");
+    if (message.content.charAt(0) == PREFIX) {
+        let args = message.content.substring(PREFIX.length).split(" ");
 
-    message.channel.send("Test")
+        message.channel.send("Test")
+    };
 });
